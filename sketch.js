@@ -1,7 +1,9 @@
 
 
-let pallete1 = ['#dcedc1','#a8e6cf','#ffd3b6','#ffaaa5','#ff8b94'];
-let pallete2 = ['	#bbd3ea','#85dbb6','#e3bcbc','#9f94b6','#c186a1'];
+let pallete1 = ['#b6f7aa'];
+let compPal1 = ['#aab6f7', '#c6b3e2','#dfafcd', '#dfafcd', '#e7c5b3', '#d2dfaf', ];
+
+let pallete2 = ['	#bbd3ea'];
 let pallete3 = ['#d6bbcb'];
 let pallete4 = ['#b54423'];
 let pallete5 = ['#899ef0'];
@@ -53,7 +55,7 @@ function draw() {
   background(bg);
   drawGrid();
   drawDots();
-  saveCanvasAsPNG(canvas);
+  //saveCanvasAsPNG(canvas);
 }
 
 function drawGrid() {
@@ -86,35 +88,54 @@ function drawDots() {
           case 'a':
           case 'A':{
             noStroke();
-            fill('#e3bcbc')
+            let color = compPal1[0];
+            fill(color);
             ellipse(x * 35 + 17.5, y * 35 + 17.5, 27.5, 27.5);
             break;
           }
           case 'e':
           case 'E':{
             noStroke();
-            fill('#ffd3b6')
+            let color = compPal1[1];
+            fill(color);
             ellipse(x * 35 + 17.5, y * 35 + 17.5, 27.5, 27.5);
             break;
           }
           case 'i':
           case 'I':{
             noStroke();
-            fill('#a8e6cf')
+            let color = compPal1[2];
+            fill(color);
             ellipse(x * 35 + 17.5, y * 35 + 17.5, 27.5, 27.5);
             break;
           }
           case 'o':
           case 'O':{
             noStroke();
-            fill('#c186a1')
+            let color = compPal1[3];
+            fill(color);
             ellipse(x * 35 + 17.5, y * 35 + 17.5, 27.5, 27.5);
             break;
           }
           case 'u':
           case 'U':{
             noStroke();
-            fill('#ff8b94')
+            let color = compPal1[4];
+            fill(color);
+            ellipse(x * 35 + 17.5, y * 35 + 17.5, 27.5, 27.5);
+            break;
+          }
+          case 'y':
+          case 'Y':{
+            noStroke();
+            let color = compPal1[5];
+            fill(color);
+            ellipse(x * 35 + 17.5, y * 35 + 17.5, 27.5, 27.5);
+            break;
+          }
+          default: {
+            noStroke();
+            fill('ffffff')
             ellipse(x * 35 + 17.5, y * 35 + 17.5, 27.5, 27.5);
             break;
           }
