@@ -1,10 +1,17 @@
 let particles = [];
 const num = 4000;
 
-const noiseScale = 0.007;
+const noiseScale = 0.003;
+
+let bg = '#F2F2EB'
 
 function setup() {
   createCanvas(1000, 1000);
+
+  let seed = random(1000);
+  let rSeed = random(seed);
+  let nSeed = noiseSeed(seed);
+
   for(let i=0; i<num; i++) {
     particles.push(createVector(random(width), random(height)));
   }
@@ -12,10 +19,11 @@ function setup() {
 }
 
 function draw() {
-  background(0, 15);
+  background(159, 15);
   for(let i = 0; i<num; i++) {
     let p = particles[i];
-    point(p.x, p.y);
+    //point(p.x, p.y);
+    circle(p.x,p.y,5);
     // get noise value 
     // scale down values to smooth out noise 
     let n = noise(p.x * noiseScale, p.y * noiseScale);
