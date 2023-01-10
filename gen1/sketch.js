@@ -10,7 +10,7 @@ let pallete5 = ['#899ef0'];
 let pallete6 = ['#b87c75'];
 let pallete7 = ['#46afb9'];
 let pallete8 = ['#43af85'];
-let pallettes = [pallete1, pallete2, pallete3, pallete4, pallete5, pallete6, pallete7, pallete8];
+let pallettes = [[pallete1, compPal1], pallete2, pallete3, pallete4, pallete5, pallete6, pallete7, pallete8];
 let index = 0;
 
 let q1 = "If  you  apply  yourself  to  the  task  before  you,  following  the  right  reason  seriously,  vigorously,  calmly,  without  allowing  anything  else  to  distract  you,  but  keeping  your  divine  part  pure,  as  if  you  might  be  bound  to  give  it  back  immediately;  if  you  hold  this,  expecting  nothing,  fearing  nothing,  but  satisfied  with  your  present  activities  according  to  nature,  and  with  heroic  truth  in  every  word  and  sound  which  you  utter,  you  will  live  happily.  And  there  is  no  man  who  is  able  to  prevent this."
