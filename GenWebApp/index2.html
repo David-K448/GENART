@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      /* Define the main flex container */
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      /* Define the left column of the main container */
+      .left-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      /* Define the right column of the main container */
+      .right-column {
+        flex: 1;
+      }
+      /* Define the nested flex container */
+      .nested-flex-container {
+        display: flex;
+        flex-direction: row;
+      }
+      /* Define the left column of the nested container */
+      .nested-left-column {
+        flex: 1;
+      }
+      /* Define the right column of the nested container */
+      .nested-right-column {
+        flex: 1;
+      }
+      #generate {
+        width: 478px;
+        height: 33px;
+        padding: 10px 20px;
+        background-color: #da442f;
+        color: #fff;
+        border-radius: 20px;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main flex container -->
+    <div class="flex-container">
+      <!-- Left column -->
+      <div class="left-column">
+        <!-- Nested flex container -->
+        <div class="generate-container">
+          <button id="generate">Generate Art</button>
+        </div>
+        <div class="nested-flex-container">
+          <!-- Nested left column -->
+          <div class="nested-left-column"></div>
+          <!-- Nested right column -->
+          <div class="nested-right-column"></div>
+        </div>
+      </div>
+      <!-- Right column -->
+      <div class="right-column">
+        <div id="sketch-holder"></div>
+      </div>
+    </div>
+  </body>
+</html>
