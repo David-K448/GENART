@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DGA</title>
+    <link rel="icon" href="imgs/websitestuff.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <h1>DGA</h1>
+    </div>
+    <div class="container">
+      <div class="controls-container">
+        <div class="generate-container">
+          <button id="generate">Generate Art</button>
+        </div>
+      </div>
+      <div class="canvas-container">
+        <div id="sketch-holder"></div>
+      </div>
+    </div>
+
+    <script src="sketch.js"></script>
+    <script>
+      var button = document.getElementById("generate");
+      button.addEventListener("click", function () {
+        draw();
+      });
+    </script>
+  </body>
+</html>
